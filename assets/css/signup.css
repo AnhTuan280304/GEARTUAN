@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.content {
+    height: 1000px;
+    position: relative;
+    background-color: #f1f4f6;
+}
+.container {
+    position: absolute;
+    left: 50%; /* Căn giữa container */
+    transform: translateX(-50%); /* Dịch chuyển 50% chiều rộng để căn giữa */
+    top: 18px;
+    width: 651px;
+       height: 684px;
+    overflow: hidden; /* Thêm clearfix */
+}
+.title {
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    background-color: #9d606e;
+    float: left; /* Sử dụng float */
+    width: 49%; /* Để 2 cột bằng nhau */
+    height: 600px;
+}
+.title-content {
+    padding: 30px;
+}
+.title img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 0;
+    right: 0;
+}
+.title h3 {
+    color: #ffffff;
+    display: inline;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+.title p,a {
+    color: #ffffff;
+    display: inline;
+    line-height: 24px;
+    text-decoration: none;
+}
+.title a:hover {
+    text-decoration: underline;
+}
+.res-title {
+    color: #5c6166;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.48px;
+    text-align: left;
+}
+.resigter {
+    position: relative;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    /* align-items: stretch; */ /* Loại bỏ flex */
+    /* display: flex; */
+    font-size: 14px;
+    line-height: 21px;
+    float: left; /* Sử dụng float */
+    width: 50%; /* Để 2 cột bằng nhau */
+    height: 600px;
+    border: 1px solid #ccc;
+}
+.list {
+    padding: 20px 20px;
+}
+.form-control {
+    width: 263px;
+    height: 20px;
+    background-color:#ffffff;
+    border-radius: 3px;
+    box-shadow: #000000 0px 0px 0px 0px;
+    color: #4d4d4d;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 22.5px;
+    padding: 8px;
+    margin: 10px 0;
+    border-color: #4d4d4d;
+}
+.invalid .form-control{
+    border-color: #f33a58;
+}
+
+.invalid .form-message {
+    color: #f33a58;
+}
+.select {
+    width: 247px;
+    height: 48px;
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 40px;
+    background-color:#ffffff;
+    border-radius: 4px;
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 21px;
+    border-color: #f4f6f7;
+    margin: 10px 0;
+}
+.slider-backgournd-button {
+    width: 283px;
+    position: absolute;
+    bottom: 57px;
+    left: 21px;
+    background-color:  #db0037;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    display: block; /* Sử dụng block để căn giữa bằng margin auto nếu cần */
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.4;
+    line-height: 32px;
+    margin: 1px auto -28px; /* Căn giữa button */
+    padding: 3px 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.slider-backgournd-button:hover {
+    background-color:  rgb(168, 0, 42);
+    color: rgb(255, 255, 255);
+}
+.login {
+    color: #e50239;
+    display: inline-block; /* Sử dụng inline-block */
+    font-size: 14px;
+    line-height: 23.94px;
+    margin-left: 83px;
+    position: absolute;
+    bottom: 0px;
+}
+.login:hover {
+    text-decoration: underline;
+}

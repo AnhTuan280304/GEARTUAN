@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/details.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>GEARTUAN</title>
+	<script src="./assets/js/index.js"></script>
+	<script src="./assets/js/details.js"></script>
+
+</head>
+
+<body onload="loadDeital()" >
+	<main>
+    <nav class="header">
+        <section class="header__container clearfix"> <a href="./index.html"><img src="https://theme.hstatic.net/1000026716/1000440777/14/logo.svg?v=28127" alt=""></a>
+            <ul class="menu__header">
+                <div class="menu__header-text">
+                    <h1>GEARTUAN</h1>
+                    <img src="https://theme.hstatic.net/1000026716/1000440777/14/logo-icon-01.svg?v=28127" alt="">
+                </div>
+                <div class="menu__header-list clearfix"> <li class="">
+						<a href="./index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="/website/about.html">About</a>
+                    </li>
+                    <li class="">
+                        <a href="/website/category.html">Laptop Khuyến Mãi</a>
+                    </li>
+                    <li class="">
+                        <a href="/website/information.html">Information</a>
+                    </li>
+                </div>
+                
+
+            </ul>
+            <div class="nav-icon-menu">
+                <a href="./login.html" class="bx bx-user" id="user" style="font-size: 20px;color: orange;margin: 7px 15px 0 0px;" >
+				<a href="./cart.html" class="bx bx-shopping-bag" id="opencart" style="font-size: 20px;color: blue;margin: 7px 10px 0 15px;" ></a>
+                <a href="" class="bx bx-sun" id="darkmode" style="font-size: 20px;color: rgb(221, 200, 14);margin: 7px 10px 0 15px;" ></a>
+                <div  class='bx bxs-grid' id="menu" ></div>
+            </div>
+        </section>
+    </nav>
+
+    <div class="details clearfix" > <div class="topInfo">
+				<h1 style="color: black;" id="deital-name" >
+			</h1>
+			  <h4 style="color: #333333;font-size: 15px;line-height: 1.4 ;" >✔ Bảo hành chính hãng 12 tháng. 
+				<br>
+				✔ Hỗ trợ đổi mới trong 7 ngày. 
+				<br>
+				✔ Windows bản quyền tích hợp. 
+				<br>
+				✔ Miễn phí giao hàng toàn quốc.
+				</h4>
+				<h3 class="line-through" id="deital-price" style="margin-top: 20px;"></h3>
+				<h3 style="color: red;" id="deital-sale" ></h3>
+				<a onclick="addToCart(this)" href="./cart.html" >Đặt hàng</a>
+			  <a href="" onclick="addToCart(this)" style="width: 175px;    margin-left: -161px;margin-top: -4px;background-color: green;" >Thêm vào giỏ hàng </a>
+			  <div class="swatches clearfix"> <div class="swatch active"><img id="" onclick="change(this)" src="https://product.hstatic.net/1000026716/product/52sp_f272f2caf7c649a48f4eec639cdb1d1c.png" /></div>
+				<div class="swatch"><img onclick="change(this)" src="https://product.hstatic.net/1000026716/product/gearvn-may-tinh-xach-tay-acer-nitro-5-an515-58-52sp-2_6893ad33d2354233ab5fef58238c35c0.jpg" /></div>
+				<div class="swatch"><img onclick="change(this)" src="https://product.hstatic.net/1000026716/product/gearvn-may-tinh-xach-tay-acer-nitro-5-an515-58-52sp-4_e3a835f6fad140a2909708e060347c00.jpg" /></div>
+				<div class="swatch"><img onclick="change(this)" src="https://product.hstatic.net/1000026716/product/gearvn-may-tinh-xach-tay-acer-nitro-5-an515-58-52sp-8_95f007052f3d4170ab03b8a6a067d92d.jpg" /></div>
+			  </div>
+			</div>
+			<div class="swiper-container">
+			  <div class="swiper-wrapper">
+				<div  class="swiper-slide"><img id="deital-img" src="https://product.hstatic.net/1000026716/product/52sp_f272f2caf7c649a48f4eec639cdb1d1c.png" /></div>
+			  </div>
+			  <div class="swiper-pagination"></div>
+			</div>
+			<div class="padme clearfix"> <div class="column col2">
+				<h2>Thông số kỹ thuật</h2>
+				<table>
+				  <tr>
+					<td class="bold">CPU</td>
+					<td>Intel Core i5-12500H 3.3GHz up to 4.5GHz 18MB</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Ram</td>
+					<td>	8GB DDR4 3200MHz (2x SO-DIMM socket, up to 32GB SDRAM)</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Ổ cứng</td>
+					<td>	512GB SSD M.2 PCIE (nâng cấp tối đa 1TB SSD PCIe Gen3, 8 Gb/s, NVMe và 2TB HDD 2.5-inch 5400 RPM) (Còn trống 1 khe SSD M.2 PCIE và 1 khe 2.5" SATA)</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Card đồ họa</td>
+					<td>	NVIDIA® GeForce RTX™ 3050 4GB GDDR6</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Màn hình	</td>
+					<td>15.6 inch FHD(1920 x 1080) IPS 144Hz SlimBezel</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Cổng giao tiếp</td>
+					<td>	
+						- 1x USB 3.2 Gen 2 Type-C Ports (supporting: USB 3.2 Gen 2 (up to 10 Gbps); DisplayPort over USB-C; Thunderbolt 4; USB charging 5 V; 3 A; DC-in port 20 V; 65 W)
+					<br>	- 1x USB 3.2 Gen 2 port featuring power-off USB charging
+					<br>	- 1x USB 3.2 Gen 2 port
+					<br>	- 1x USB 3.2 Gen 1 port
+					<br>	- 1x Ethernet (RJ-45) port
+					<br>	- 1x HDMI®2.1 port with HDCP support
+					<br>	- 1x 3.5 mm headphone/speaker jack, supporting headsets with built-in microphone
+					<br>	- 1x DC-in jack for AC adapter</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Ổ quang	</td>
+					<td>None</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Audio	</td>
+					<td>Waves MaxxAudio®, Acer TrueHarmony™</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Bàn phím	</td>
+					<td>RGB 4 vùng</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Chuẩn LAN	</td>
+					<td>KillerTM Ethernet E2600</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Chuẩn WIFI	</td>
+					<td>KillerTM Wi-Fi 6 AX 1650i (2x2)</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Bluetooth	</td>
+					<td>Bluetooth® 5.1</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Webcam	</td>
+					<td>HD Webcam</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Hệ điều hành	</td>
+					<td>Windows 11 Home</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Pin	</td>
+					<td>4 Cell 57.5WHr</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Trọng lượng	</td>
+					<td>2.5 kg</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Màu sắc	</td>
+					<td>Obsidian Black</td>
+				  </tr>
+				  <tr>
+					<td class="bold">Kích thước	</td>
+					<td>360.4 x 271.09 x 25.9 mm</td>
+				  </tr>
+				</table>
+			  </div>
+			  <div class="column col1">
+				<h2>Đánh giá chi tiết Laptop Gaming Acer Nitro 5 Tiger AN515</h2>
+				  <p>Thiết kế tinh tế cùng những đường cắt đậm chất gaming. Màn hình IPS tần số quét cao, tràn viền mang lại trải nghiệm game nhập vai hoàn hảo cùng đèn LED RGB 4 Zone thay đổi được 16,7 triệu màu cho game thủ thỏa sức sáng tạo không gian gaming riêng biệt.</p>
+				  <p>Một trong những dòng Laptop gaming NVIDIA GeForce RTX 30/GTX16 Series là công cụ tối ưu cho trường học và chơi game. Được hỗ trợ bởi GPU từng đoạt giải thưởng và công nghệ Max-Q, bạn sẽ có được những chiếc máy mỏng và nhẹ giúp đáp ứng hàng loạt các ứng dụng và mọi tựa game.</p>
+				 <p>Immersive Ray Tracing  (đối với các sp dùng GTX16 series) Rt Cores thế hệ thứ 2 chuyên dụng cho phép dò tia nhanh, cho đồ họa chân thực và nhập vai nhất. Dò tia mô phỏng hành vi vật lý của ánh sáng để mang lại kết xuất thời gian thực, chất lượng điện ảnh cho ngay cả những trò chơi trực quan cường độ cao nhất.
+				  </p>
+				  <p>Bộ vi xử lý thế hệ 12 mới nhất của Intel được tạo ra để đẩy khung hình và giúp việc di chuyển trở nên dễ dàng. Tốc độ Turbo "lên đến" 4.7 GHz với tối đa 14 lõi và 20 luồng (tùy từng option CPU), bạn sẽ đạt được mức hiệu suất mà bạn cần và tự do chơi game; mang lại độ trễ thấp nhất và khả năng phản hồi tốt nhất. </p>
+				  <p>Đáp ứng tốt mục tiêu nhanh hơn, phản ứng nhanh hơn và tăng độ chính xác mục tiêu thông qua một bộ công nghệ mang tính cách mạng để đo lường và tối ưu hóa độ trễ hệ thống.</p>
+  
+				</div>
+			</div>
+		  </div>
+		  
+		  <div class="fadey"></div>
+		</div> 
+		  <footer>
+            <div class="footer-top">
+              <div class="container clearfix"> <div class="row" style="display: flex;justify-content: space-evenly;">
+                  <div class="col-md-4" style="width: 25%; float: left;"> <h4>Thông tin cửa hàng</h4> <br>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Về chúng tôi</a></li>
+                      <li><a href="#">Liên hệ</a></li>
+                      <li><a href="#">Điều khoản sử dụng</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4" style="width: 25%; float: left;">
+                    <h4>Hỗ trợ khách hàng</h4><br>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Câu hỏi thường gặp</a></li>
+                      <li><a href="#">Chính sách đổi trả</a></li>
+                      <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4" style="width: 25%; float: left;">
+                    <h4>Kết nối với chúng tôi</h4><br>
+                    <ul class="list-unstyled social-icons clearfix"> <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/900px-Facebook_Logo_%282019%29.png" alt=""></a></li>
+                      <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/198px-Instagram_logo_2016.svg.png" alt=""></a></li>
+                      <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/239px-YouTube_full-color_icon_%282017%29.svg.png?20211015074811" alt=""></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4" style="width: 25%; float: left;">
+                    <h4>Hệ thống cửa hàng</h4><br>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Hà Nội</a></li>
+                      <li><a href="#">Tp. Hồ Chí Minh</a></li>
+                      <li><a href="#">Đà Nẵng</a></li>
+                      <li><a href="#">Cần Thơ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row" >
+                  <div class="col-md-12 text-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer> 
+	  </div>
+
+
+    <div className="scroll-to-top">
+        <span class="btn btn-position btn-style"><i class='bx bxs-to-top'></i></i>
+    </div>
+	
+</main>
+</body>
+
+</html>

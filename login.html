@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container clearfix"> <div class="index" style="text-align: center;margin: 20px 0;" >
+                Để tìm hiểu thêm về các dịch vụ của GearTUAN, hãy truy cập <a href="./index.html" style="text-decoration: none;color: #e50239;" >geartuan.com</a> 
+            </div>
+            <div class="title">
+                <div class="title-content">
+                <h3>Đăng nhập</h3>
+                <br><br>
+                <p></p>
+                <img src="./assets/img/logo2.png" alt="">
+            </div>
+            </div>
+            <div class="resigter">
+                <div class="list">
+                <form action=""  id="form-1" >
+                    <div class="from-group">
+                        <label>Tài khoản</label>
+                        <input id="nameAccount" class="form-control" type="text" placeholder="Nhập tài khoản của bạn">
+                        <span class="form-message" ></span>
+                    </div>
+                    <div class="from-group">
+                        <label>Mật khẩu</label>
+                        <input id="password" class="form-control" type="password" placeholder="Nhập mật khẩu của bạn">
+                        <span class="form-message" ></span>
+                    </div>
+                </form>
+                
+                <button type="submit" class="slider-backgournd-button"><a href="./index.html">Đăng nhập</a></button>
+                <br><br><br><br>
+                <a href="" class="login">Quên mật khẩu ?</a> 
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <p style="margin-left: 18px;width: 248px;height: 61px;border-top:1px solid;padding: 20px 0;text-align: center;" >Chưa có tài khoản ? <a href="./signup.html" class="login-2" style="margin-left: 10px;" >Đăng ký ở đây</a></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/validator.js"></script>
+    <script>
+          Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#nameAccount','Vui lòng nhập tên tài khoản'),
+                Validator.minLength('#password',8),
+            ]
+        })
+    </script>
+</body>
+</html>

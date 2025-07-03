@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+
+    <script src="./assets/js/details.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <title>GEARTUAN</title>
+</head>
+<body onload="loadCart()" >
+    <div class="main">
+    <!--Header-->
+    <nav class="header">
+        <section class="header__container">
+          <a href="./index.html"><img src="https://theme.hstatic.net/1000026716/1000440777/14/logo.svg?v=28127" alt=""></a>
+            <ul class="menu__header">
+                <div class="menu__header-text">
+                        <h1>GEARTUAN</h1>
+                    <img src="https://theme.hstatic.net/1000026716/1000440777/14/logo-icon-01.svg?v=28127" alt="">
+                </div>
+                <div class="menu__header-list">
+                    <li class="">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="/website/about.html">About</a>
+                    </li>
+                    <li class="">
+                        <a href="/website/category.html">Laptop Khuyến Mãi</a>
+                    </li>
+                    <li class="">
+                        <a href="/website/information.html">Information</a>
+                    </li>
+                </div>
+               
+
+            </ul>
+            <div class="nav-icon-menu">
+                <a href="./login.html" class="bx bx-user" id="user" style="font-size: 20px;color: orange;margin: 7px 15px 0 0px;" >
+                <a href="./cart.html" class="bx bx-shopping-bag" id="opencart" style="font-size: 20px;color: blue;margin: 7px 10px 0 15px;" ></a>
+                <a href="" class="bx bx-sun" id="darkmode" style="font-size: 20px;color: rgb(221, 200, 14);margin: 7px 10px 0 15px;" ></a>
+                <div  class='bx bxs-grid' id="menu" ></div>
+            </div>
+        </section>
+    </nav>
+    <!--scroll top-->
+    <div className="scroll-to-top">
+        <span class="btn btn-position btn-style"><i class='bx bxs-to-top'></i></i>
+    </div>
+    <div class="cart-container">
+        <button class="btn-remove" onclick="localStorage.removeItem('cart');location.reload();" >Xóa tất cả</button>
+        <h2>Giỏ hàng</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Tên sản phẩm</th>
+              <th>Số lượng</th>
+              <th>Giá</th>
+              <th>Tổng cộng</th>
+              <th>Xóa</th>
+            </tr>
+          </thead>
+          <tbody class="cartList" >
+            <tr>
+              <td><img  src="https://product.hstatic.net/1000026716/product/52sp_f272f2caf7c649a48f4eec639cdb1d1c_small.png" alt=""></td>
+              <td><a href="./details_product.html" class="name-product" >Laptop gaming Acer Nitro 5 Tiger AN515 58 52SP</a></td>
+              <td><input  type="number" min="1" class="qty-input" value="1" ></td>
+              <td>24,999,999<span style="text-decoration: underline;" >đ</span></td>
+              <td>24,999,999<span style="text-decoration: underline;" >đ</span></td>
+              <td><i class="fa-regular fa-trash-can"></i></td>
+            </tr>
+            <tr>
+                <td><img src="https://product.hstatic.net/1000026716/product/artboard_1_fcd1167e20ee4413bfaf31630ca4087e_large.png" alt="" class="cart-img" ></td>
+                <td><a href="./details_product.html" class="name-product" >Bàn Phím Cơ Akko 5087B Multi-Modes World Tour London</a></td>
+                <td><input type="number" min="1" class="qty-input" value="1" ></td>
+                <td>2,290,000<span style="text-decoration: underline;" >đ</span></td>
+                <td>2,290,000<span style="text-decoration: underline;" >đ</span></td>
+                <td><i class="fa-regular fa-trash-can"></i></td>
+              </tr>
+          </tbody>
+        </table>
+        <div class="total">
+            <span>Tổng tiền:</span>
+            <span class="price-total">0<span style="text-decoration: underline;" >đ</span></span>
+          </div>
+        <button class="checkout">Thanh toán</button>
+        <script src="./assets/js/index.js"></script>
+      </div>   
+        <footer>
+            <div class="footer-top">
+              <div class="container clearfix"> <div class="row" style="display: flex;justify-content: space-evenly;">
+                  <div class="col-md-4" style="width: 25%; float: left;"> <h4>Thông tin cửa hàng</h4> <br>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Về chúng tôi</a></li>
+                      <li><a href="#">Liên hệ</a></li>
+                      <li><a href="#">Điều khoản sử dụng</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4" style="width: 25%; float: left;">
+                    <h4>Hỗ trợ khách hàng</h4><br>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Câu hỏi thường gặp</a></li>
+                      <li><a href="#">Chính sách đổi trả</a></li>
+                      <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4" style="width: 25%; float: left;">
+                    <h4>Kết nối với chúng tôi</h4><br>
+                    <ul class="list-unstyled social-icons clearfix"> <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/900px-Facebook_Logo_%282019%29.png" alt=""></a></li>
+                      <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/198px-Instagram_logo_2016.svg.png" alt=""></a></li>
+                      <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/239px-YouTube_full-color_icon_%282017%29.svg.png?20211015074811" alt=""></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4" style="width: 25%; float: left;">
+                    <h4>Hệ thống cửa hàng</h4><br>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Hà Nội</a></li>
+                      <li><a href="#">Tp. Hồ Chí Minh</a></li>
+                      <li><a href="#">Đà Nẵng</a></li>
+                      <li><a href="#">Cần Thơ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row" >
+                  <div class="col-md-12 text-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>    
+ </div>
+</body>
+
+</html>
